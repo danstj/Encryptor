@@ -6,7 +6,7 @@ import java.util.concurrent.ThreadLocalRandom;
 /*
     Author Dan St Jean
  */
-public class BestEncryptor {
+public class BestEncryptor implements IEncryptor{
     
     public String encrypt(String strValue)
     {

@@ -4,7 +4,7 @@ package encryptor;
 /*
     Author Dan St Jean
  */
-public interface IEncrytor {
+public interface IEncryptor {
     
     public String encrypt(String strValue);
     

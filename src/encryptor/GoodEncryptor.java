@@ -4,7 +4,7 @@ package encryptor;
 /*
     Author Dan St Jean
  */
-public class GoodEncryptor {
+public class GoodEncryptor implements IEncryptor{
     
     
     public String encrypt(String strValue)
