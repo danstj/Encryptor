@@ -8,6 +8,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class BestEncryptor implements IEncryptor{
     
+    @Override
     public String encrypt(String strValue)
     {
         int stringLength = strValue.length();
@@ -43,6 +44,7 @@ public class BestEncryptor implements IEncryptor{
         return strNew;
     }
     
+    @Override
     public String decrypt(String strValue)
     {
         int stringLength = strValue.length();

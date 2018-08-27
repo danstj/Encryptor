@@ -6,7 +6,7 @@ package encryptor;
  */
 public class GoodEncryptor implements IEncryptor{
     
-    
+    @Override
     public String encrypt(String strValue)
     {
         int stringLength = strValue.length();
@@ -22,6 +22,7 @@ public class GoodEncryptor implements IEncryptor{
         return strNew;
     }
     
+    @Override
     public String decrypt(String strValue)
     {
         int stringLength = strValue.length();

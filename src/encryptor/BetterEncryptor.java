@@ -6,6 +6,7 @@ package encryptor;
  */
 public class BetterEncryptor implements IEncryptor{
     
+    @Override
     public String encrypt(String strValue)
     {
         int stringLength = strValue.length();
@@ -33,6 +34,7 @@ public class BetterEncryptor implements IEncryptor{
         return strNew;
     }
     
+    @Override
     public String decrypt(String strValue)
     {
         int stringLength = strValue.length();

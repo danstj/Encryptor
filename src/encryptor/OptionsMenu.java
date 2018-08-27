@@ -193,9 +193,9 @@ public class OptionsMenu implements ActionListener{
         }
         
     }
+    
     public String getDefaultEncryptorType() { return  "encryptor.GoodEncryptor"; }
     
-
     @Override
     public void actionPerformed(ActionEvent evt) {
         Object source = evt.getSource();
@@ -244,6 +244,17 @@ public class OptionsMenu implements ActionListener{
         strValue = JOptionPane.showInputDialog(null, "Enter the word or phrase you\n want to Encrypt");
         
         strNewValue = obIEncryptor.encrypt(strValue);
+        obProperties.setProperty("phrase", strValue);   // ADD <<===============
+        try
+        {
+            obProperties.store(m_obFileOut, null);
+            m_obFileOut.close();
+        }
+        catch(IOException exIO)
+        {
+            
+        }
+        
         JOptionPane.showMessageDialog(null, "Your Encrypted word or phrase:\n" + strNewValue);
     }
     
